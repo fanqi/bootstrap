@@ -44,6 +44,11 @@
 </nav>
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
-
+<script>
+    $("#mytab a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+    });
+</script>
 </body>
 </html>

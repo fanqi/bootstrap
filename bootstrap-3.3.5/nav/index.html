@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>导航</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <p>标签式导航</p>
+    <ul class="nav nav-tabs " id="mytab1" role="tablist">
+        <li role="presentation" class="active"><a href="#">home</a></li>
+        <li role="presentation"><a href="#">Hello</a></li>
+        <li role="presentation"><a href="#">World</a></li>
+    </ul>
+    <p>胶囊式导航</p>
+    <ul class="nav nav-pills" id="mytab2" role="tablist">
+        <li role="presentation" class="active"><a href="#">home</a></li>
+        <li role="presentation"><a href="#">Hello</a></li>
+        <li role="presentation"><a href="#">World</a></li>
+    </ul>
+    <p>胶囊式导航(垂直)</p>
+    <ul class="nav nav-pills nav-stacked" id="mytab3" role="tablist">
+        <li role="presentation" class="active"><a href="">home</a></li>
+        <li role="presentation"><a href="#">Hello</a></li>
+        <li role="presentation"><a href="#">World</a></li>
+    </ul>
+    <p>两端对齐的导航</p>
+    <ul class="nav nav-pills nav-justified" id="mytab4" role="tablist">
+        <li role="presentation" class="active"><a href="#">home</a></li>
+        <li role="presentation"><a href="#">Hello</a></li>
+        <li role="presentation" class="disabled"><a href="#">World(禁用)</a></li>
+    </ul>
+    <p>带下拉菜单的导航</p>
+    <ul class="nav nav-pills nav-justified" id="mytab5" role="tablist">
+        <li role="presentation" class="active"><a href="#">home</a></li>
+        <li role="presentation"><a href="#">Hello</a></li>
+        <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">World
+            <span class="caret"></span>
+        </a>
+            <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a role="menuitem" href="#" tabindex="-1">Hello</a></li>
+                <li role="presentation"><a role="menuitem" href="#" tabindex="-1">Hello</a></li>
+                <li role="presentation"><a role="menuitem" href="#" tabindex="-1">Hello</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script>
+    $("#mytab1 a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+    });
+    $("#mytab2 a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+    });
+    $("#mytab3 a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+    });
+    $("#mytab4 a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+    });
+    $("#mytab5 a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+    });
+</script>
+</body>
+</html>
